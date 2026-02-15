@@ -6,12 +6,17 @@ In simple words:
 👉 Otherwise → do something else */
 
 publi class IfElse {
-  // Example 1: simle if
+  public static void main(String[] args) {
+      
+    // Example 1: simle if
   int age = 20;
 
   if (age >= 18) {
     System.out.println("You are an adult.");
   }
 
-System.out.println("------------------");
+  System.out.println("------------------");
+  }
 }
+
+
