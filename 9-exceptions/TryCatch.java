@@ -44,7 +44,7 @@ public class TryCatch {
       System.out.println("Error: Cannot divide by zero!");
     }
 
-    System.out.println("Program continues..."); /* Error: Cannot divide by zero! Program continues... */
+    System.out.println("Program continues..."); //OUTPUT: Error: Cannot divide by zero! Program continues... 
   }                                                
 }
 
@@ -56,4 +56,13 @@ try {
   System.out.println("Error: Invalid array index!");
 }
 
-System.out.println("Program continues safely.");
+System.out.println("Program continues safely."); //OUTPUT: Error: Invalid array index! Program continues safely.
+
+// Example 3: General Exception!
+
+try {
+  String text = null;
+  System.out.println(text.length()); // NullPointerException
+} catch (Exception e) {
+  System.out.println("An error occurred: " + e); //OUTPUT: An error occurred: java.lang.NullPointerException 
+} 
